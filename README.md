@@ -1,33 +1,22 @@
 # Drop
 
-A [libGDX](https://libgdx.com/) project generated with [gdx-liftoff](https://github.com/libgdx/gdx-liftoff).
+My first game with [libGDX](https://libgdx.com/). Raindrops fall, you move the bucket and try to catch them. Simple, but it's mine.
 
-This project was generated with a template including simple application launchers and an empty `ApplicationListener` implementation.
+I built it by following the official [A Simple Game](https://libgdx.com/wiki/start/a-simple-game) tutorial and went through every part until I actually understood it.
 
-## Platforms
+## Controls
 
-- `core`: Main module with the application logic shared by all platforms.
-- `lwjgl3`: Primary desktop platform using LWJGL3; was called 'desktop' in older docs.
+- `A` / `D` to move left and right
+- Or just click / drag with the mouse
 
-## Gradle
+## Run it
 
-This project uses [Gradle](https://gradle.org/) to manage dependencies.
-The Gradle wrapper was included, so you can run Gradle tasks using `gradlew.bat` or `./gradlew` commands.
-Useful Gradle tasks and flags:
+You need Java 17 or newer.
 
-- `--continue`: when using this flag, errors will not stop the tasks from running.
-- `--daemon`: thanks to this flag, Gradle daemon will be used to run chosen tasks.
-- `--offline`: when using this flag, cached dependency archives will be used.
-- `--refresh-dependencies`: this flag forces validation of all dependencies. Useful for snapshot versions.
-- `build`: builds sources and archives of every project.
-- `cleanEclipse`: removes Eclipse project data.
-- `cleanIdea`: removes IntelliJ project data.
-- `clean`: removes `build` folders, which store compiled classes and built archives.
-- `eclipse`: generates Eclipse project data.
-- `idea`: generates IntelliJ project data.
-- `lwjgl3:jar`: builds application's runnable jar, which can be found at `lwjgl3/build/libs`.
-- `lwjgl3:run`: starts the application.
-- `test`: runs unit tests (if any).
+```
+gradlew lwjgl3:run
+```
 
-Note that most tasks that are not specific to a single project can be run with `name:` prefix, where the `name` should be replaced with the ID of a specific project.
-For example, `core:clean` removes `build` folder only from the `core` project.
+## What I learned
+
+How a game loop works, why delta time matters, viewports and world units, sprites, collision, and playing sound and music.
